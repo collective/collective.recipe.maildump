@@ -28,7 +28,7 @@ setup(
     keywords='buildout recipe maildump',
     author='Noe Nieto',
     author_email='nnieto@noenieto.com',
-    url='',
+    url='https://github.com/collective/collective.recipe.maildump',
     license='BSD',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['collective', 'collective.recipe'],
