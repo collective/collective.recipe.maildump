@@ -12,7 +12,7 @@ def read(fname):
 
 setup(
     name = "collective.recipe.maildump",
-    version = "0.1",
+    version = "0.2",
     description = "Buildout recipe to install maildump",
     long_description=read('README.txt'),
     classifiers=[
