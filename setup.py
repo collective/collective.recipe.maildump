@@ -9,12 +9,14 @@ from setuptools import find_packages
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
+long_description = read('README.txt')
+long_description += read('CHANGES.txt')
 
 setup(
     name = "collective.recipe.maildump",
-    version = "0.2",
+    version = "0.2.1",
     description = "Buildout recipe to install maildump",
-    long_description=read('README.txt'),
+    long_description=long_description,
     classifiers=[
         'Framework :: Buildout',
         'Intended Audience :: Developers',
