@@ -41,3 +41,4 @@ For example, on django add the following to you ``settings.py`` file::
     EMAIL_USE_TLS = False
     DEFAULT_FROM_EMAIL='contacto@holokinesislibros.com'
     SERVER_EMAIL = 'contacto@holokinesislibros.com'
+

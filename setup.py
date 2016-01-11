@@ -1,20 +1,27 @@
-import os
-from setuptools import setup
-from setuptools import find_packages
+"""A setuptools based setup module.
 
-# Utility function to read the README file.
-# Used for the long_description.  It's nice, because now 1) we have a top level
-# README file and 2) it's easier to type in the README file than to put a raw
-# string in below ...
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+See:
+https://packaging.python.org/en/latest/distributing.html
+https://github.com/collective/collective.recipe.maildump
+"""
+# Always prefer setuptools over distutils
+from setuptools import setup, find_packages
+# To use a consistent encoding
+from codecs import open
+from os import path
 
-long_description = read('README.txt')
-long_description += read('CHANGES.txt')
+here = path.abspath(path.dirname(__file__))
+
+def readfile(filename):
+    with open(path.join(here, filename), encoding='utf-8') as f:
+        return f.read()
+
+long_description = readfile('README.rst')
+long_description += readfile('CHANGES.txt')
 
 setup(
     name = "collective.recipe.maildump",
-    version = "0.2.1",
+    version = "0.2.2",
     description = "Buildout recipe to install maildump",
     long_description=long_description,
     classifiers=[
